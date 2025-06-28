@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PATH E: Investing – From Index Funds to Capital Allocation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+      position: relative;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #1a73e8;
+    }
+    h2 {
+      margin-top: 2.5rem;
+      color: #2a2a2a;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.3rem;
+      font-weight: 600;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.5rem;
+    }
+    li {
+      background: white;
+      margin: 0.4rem 0;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+      cursor: pointer;
+      user-select: none;
+    }
+    li:hover {
+      background: #e6f0ff;
+    }
+    input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    /* Dark mode styles */
+    body.dark {
+      background: #121212;
+      color: #ddd;
+    }
+    body.dark h1 {
+      color: #8ab4f8;
+    }
+    body.dark h2 {
+      color: #ccc;
+      border-bottom-color: #444;
+    }
+    body.dark li {
+      background: #1e1e1e;
+      box-shadow: 0 1px 4px rgba(255, 255, 255, 0.1);
+    }
+    body.dark li:hover {
+      background: #333a56;
+    }
+    body.dark input[type="checkbox"] {
+      filter: invert(1);
+    }
+
+    /* Dark mode toggle button */
+    #darkModeToggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: #1a73e8;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(26, 115, 232, 0.5);
+      transition: background-color 0.3s;
+      z-index: 1000;
+    }
+    #darkModeToggle:hover {
+      background: #155bb5;
+    }
+  </style>
+</head>
+<body>
+  <button id="darkModeToggle">Dark Mode</button>
+
+  <h1>📚 PATH E: Investing – From Index Funds to Capital Allocation</h1>
+
+  <section>
+    <h2>Beginner</h2>
+    <ul>
+      <li><input type="checkbox" id="item-1" /> <label for="item-1">The Simple Path to Wealth – JL Collins ✅</label></li>
+      <li><input type="checkbox" id="item-2" /> <label for="item-2">The Bogleheads' Guide to Investing – Larimore et al ✅</label></li>
+      <li><input type="checkbox" id="item-3" /> <label for="item-3">I Will Teach You to Be Rich – Ramit Sethi ✅</label></li>
+      <li><input type="checkbox" id="item-4" /> <label for="item-4">Your Money or Your Life – Vicki Robin ✅</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Intermediate</h2>
+    <ul>
+      <li><input type="checkbox" id="item-5" /> <label for="item-5">The Little Book of Common Sense Investing – John Bogle</label></li>
+      <li><input type="checkbox" id="item-6" /> <label for="item-6">Unshakeable – Tony Robbins ✅</label></li>
+      <li><input type="checkbox" id="item-7" /> <label for="item-7">One Up on Wall Street – Peter Lynch ✅</label></li>
+      <li><input type="checkbox" id="item-8" /> <label for="item-8">The Dhandho Investor – Mohnish Pabrai</label></li>
+      <li><input type="checkbox" id="item-9" /> <label for="item-9">Common Stocks and Uncommon Profits – Philip Fisher</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Advanced</h2>
+    <ul>
+      <li><input type="checkbox" id="item-10" /> <label for="item-10">The Intelligent Investor – Benjamin Graham ✅</label></li>
+      <li><input type="checkbox" id="item-11" /> <label for="item-11">Poor Charlie’s Almanack – Charlie Munger</label></li>
+      <li><input type="checkbox" id="item-12" /> <label for="item-12">The Most Important Thing – Howard Marks</label></li>
+      <li><input type="checkbox" id="item-13" /> <label for="item-13">Capital Allocators – Ted Seides</label></li>
+      <li><input type="checkbox" id="item-14" /> <label for="item-14">Antifragile – Nassim Taleb ✅</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Special Topics</h2>
+    <ul>
+      <li><input type="checkbox" id="item-15" /> <label for="item-15">Cryptoassets – Chris Burniske ✅</label></li>
+      <li><input type="checkbox" id="item-16" /> <label for="item-16">The Bitcoin Standard – Saifedean Ammous</label></li>
+      <li><input type="checkbox" id="item-17" /> <label for="item-17">The Bond Book – Annette Thau</label></li>
+      <li><input type="checkbox" id="item-18" /> <label for="item-18">Investing in REITs – Ralph L. Block</label></li>
+    </ul>
+  </section>
+
+  <script>
+    const toggleBtn = document.getElementById('darkModeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      if (document.body.classList.contains('dark')) {
+        toggleBtn.textContent = 'Light Mode';
+      } else {
+        toggleBtn.textContent = 'Dark Mode';
+      }
+      localStorage.setItem('darkMode', document.body.classList.contains('dark') ? 'enabled' : 'disabled');
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark');
+        toggleBtn.textContent = 'Light Mode';
+      }
+      loadCheckboxStates();
+    });
+
+    function saveCheckboxState(id, checked) {
+      localStorage.setItem('pathE-checkbox-' + id, checked);
+    }
+
+    function loadCheckboxStates() {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(checkbox => {
+        const saved = localStorage.getItem('pathE-checkbox-' + checkbox.id);
+        checkbox.checked = saved === 'true';
+        checkbox.addEventListener('change', () => {
+          saveCheckboxState(checkbox.id, checkbox.checked);
+        });
+      });
+    }
+  </script>
+</body>
+</html>

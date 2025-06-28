@@ -59,6 +59,48 @@
       cursor: pointer;
     }
 
+      #bottomButtons {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding-bottom: 2rem;
+    }
+
+    #bottomButtons button {
+      background: #1a73e8;
+      border: none;
+      padding: 0.7rem 1.4rem;
+      font-weight: 600;
+      font-size: 1rem;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 3px 6px rgba(26, 115, 232, 0.4);
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    #bottomButtons button:hover {
+      background: #155bb5;
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(21, 91, 181, 0.8);
+    }
+
+    /* Dark mode support */
+    body.dark #bottomButtons button {
+      background: #8ab4f8;
+      color: #121212;
+      box-shadow: 0 3px 6px rgba(138, 180, 248, 0.6);
+    }
+
+    body.dark #bottomButtons button:hover {
+      background: #5c8bf7;
+      color: white;
+      box-shadow: 0 6px 12px rgba(92, 139, 247, 0.9);
+    }
+
+
     /* Dark mode styles */
     body.dark {
       background: #121212;
@@ -177,6 +219,13 @@
       <li><input type="checkbox" id="item-34" /> <label for="item-34">Tools of Titans – Tim Ferriss</label></li>
     </ul>
   </section>
+  <div id="bottomButtons">
+    <button onclick="location.href='path-a.html'">Tech Entrepreneurship</button>
+    <button onclick="location.href='path-b.html'">Real Estate</button>
+    <button onclick="location.href='path-c.html'">Sales & Soft Skills</button>
+    <button onclick="location.href='path-d.html'">Long-Term Wealth</button>
+    <button onclick="location.href='path-e.html'">Investment</button>
+  </div>
 
   <script>
     const toggleBtn = document.getElementById('darkModeToggle');
